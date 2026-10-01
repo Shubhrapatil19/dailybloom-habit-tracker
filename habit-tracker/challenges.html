@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Explore small daily challenges with DailyBloom."
+  >
+
+  <title>Challenges | DailyBloom</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="challenges-page">
+  <div class="app">
+
+    <header class="header">
+      <a class="logo" href="./index.html">
+        <span class="logo-icon" aria-hidden="true">✿</span>
+        DailyBloom
+      </a>
+
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./tips.html">Tips</a>
+        <a href="./challenges.html" aria-current="page">Challenges</a>
+        <a href="./mood.html">Mood</a>
+        <a href="./about.html">About</a>
+      </nav>
+
+      <button
+  class="theme-toggle"
+  id="theme-toggle"
+  type="button"
+  aria-label="Toggle dark mode"
+  aria-pressed="false"
+>
+  <span id="theme-icon" aria-hidden="true">🌙</span>
+  <span id="theme-text">Dark mode</span>
+</button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="challenge-title">
+        <span class="badge">TRY SOMETHING DIFFERENT</span>
+
+        <h1 id="challenge-title">
+          Little challenges.<br>
+          <span>Fresh possibilities.</span>
+        </h1>
+
+        <p class="hero-description">
+          Choose a small activity, give it a try,
+          and celebrate taking a moment for yourself.
+        </p>
+      </section>
+
+      <section class="challenge-board" aria-labelledby="activities-title">
+
+        <div class="section-heading">
+          <div>
+            <p class="section-label">YOUR MINI ADVENTURES</p>
+            <h2 id="activities-title">Pick your challenge</h2>
+          </div>
+
+          <span class="routine-count">Go at your own pace</span>
+        </div>
+
+        <div class="challenge-grid">
+
+          <article class="challenge-card challenge-lavender">
+            <span class="challenge-symbol" aria-hidden="true">📵</span>
+            <span class="challenge-time">10 minutes</span>
+
+            <h3>A screen-free pause</h3>
+
+            <p>
+              Put your phone aside and spend a few minutes
+              enjoying a quiet activity away from your screen.
+            </p>
+
+            <label class="challenge-action">
+              <input type="checkbox" name="screen-break">
+              <span class="action-default">Mark as done</span>
+              <span class="action-complete">✓ Challenge complete</span>
+            </label>
+          </article>
+
+          <article class="challenge-card challenge-peach">
+            <span class="challenge-symbol" aria-hidden="true">✍️</span>
+            <span class="challenge-time">5 minutes</span>
+
+            <h3>Write a little gratitude</h3>
+
+            <p>
+              Write down three small things you appreciated today.
+              A kind message or a good meal counts too.
+            </p>
+
+            <label class="challenge-action">
+              <input type="checkbox" name="gratitude">
+              <span class="action-default">Mark as done</span>
+              <span class="action-complete">✓ Challenge complete</span>
+            </label>
+          </article>
+
+          <article class="challenge-card challenge-mint">
+            <span class="challenge-symbol" aria-hidden="true">🪴</span>
+            <span class="challenge-time">5 minutes</span>
+
+            <h3>Refresh your space</h3>
+
+            <p>
+              Tidy one small corner of your desk,
+              arrange your books, or care for a plant.
+            </p>
+
+            <label class="challenge-action">
+              <input type="checkbox" name="tidy-space">
+              <span class="action-default">Mark as done</span>
+              <span class="action-complete">✓ Challenge complete</span>
+            </label>
+          </article>
+
+        </div>
+
+        <div class="challenge-celebration">
+          <span aria-hidden="true">🎉</span>
+
+          <div>
+            <h3>You completed all three!</h3>
+            <p>Take a moment to recognise your effort today.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <aside class="gentle-note">
+        <span aria-hidden="true">✦</span>
+        <p>
+          One completed challenge is a good start.
+          You can choose the activities that fit your day.
+        </p>
+      </aside>
+
+      <section class="callout" aria-labelledby="check-in-title">
+        <div>
+          <h2 id="check-in-title">How are you feeling today?</h2>
+          <p>Take a moment to check in with yourself.</p>
+        </div>
+
+        <a class="button-link" href="./mood.html">
+          Open mood check-in →
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>DailyBloom · Make room for better habits.</p>
+      <span>Built with HTML &amp; CSS</span>
+    </footer>
+
+  </div>
+<script src="./theme.js"></script>
+</body>
+</html>

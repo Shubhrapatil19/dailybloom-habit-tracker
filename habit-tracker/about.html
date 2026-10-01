@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Learn about DailyBloom, a simple habit tracker built with HTML and CSS."
+  >
+
+  <title>About | DailyBloom</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <header class="header">
+      <a class="logo" href="./index.html">
+        <span class="logo-icon" aria-hidden="true">✿</span>
+        DailyBloom
+      </a>
+
+      <nav class="navigation" aria-label="Main navigation">
+  <a href="./index.html">Home</a>
+  <a href="./tips.html">Tips</a>
+  <a href="./challenges.html">Challenges</a>
+  <a href="./mood.html">Mood</a>
+  <a href="./about.html" aria-current="page">About</a>
+</nav>
+
+<button
+  class="theme-toggle"
+  id="theme-toggle"
+  type="button"
+  aria-label="Toggle dark mode"
+  aria-pressed="false"
+>
+  <span id="theme-icon" aria-hidden="true">🌙</span>
+  <span id="theme-text">Dark mode</span>
+</button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="about-title">
+        <span class="badge">MEET DAILYBLOOM</span>
+
+        <h1 id="about-title">
+          A little space<br>
+          <span>to grow every day.</span>
+        </h1>
+
+        <p class="hero-description">
+          DailyBloom is a simple habit tracker that helps you
+          pause, check in, and recognise your daily effort.
+        </p>
+      </section>
+
+      <section class="story-panel" aria-labelledby="story-title">
+        <div class="story-art" aria-hidden="true">
+          <span>🌱</span>
+          <p>Start small.<br>Keep growing.</p>
+        </div>
+
+        <div class="story-content">
+          <p class="section-label">OUR IDEA</p>
+
+          <h2 id="story-title">Progress can be simple.</h2>
+
+          <p>
+            Big plans often begin with small actions.
+            DailyBloom brings three everyday habits into
+            one clear and comfortable space.
+          </p>
+
+          <p>
+            Use the tracker to mark your habits as complete
+            and watch your progress update as you go.
+            Explore the Tips page whenever you need a little inspiration.
+          </p>
+
+          <a class="text-link" href="./index.html">
+            Explore the tracker →
+          </a>
+        </div>
+      </section>
+
+      <section class="features-section" aria-labelledby="features-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">DESIGNED TO FEEL EASY</p>
+            <h2 id="features-title">What you'll find here</h2>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">✓</span>
+            <h3>Simple check-ins</h3>
+            <p>
+              Mark each habit complete using clear,
+              easy-to-use checkboxes.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">◔</span>
+            <h3>Visible progress</h3>
+            <p>
+              See how many of your three habits
+              you've completed during your check-in.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">✦</span>
+            <h3>A flexible layout</h3>
+            <p>
+              Enjoy a layout that adapts to your
+              desktop, tablet, or mobile screen.
+            </p>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="project-note" aria-labelledby="project-title">
+        <p class="section-label">ABOUT THIS PROJECT</p>
+
+        <h2 id="project-title">Small website. Useful learning.</h2>
+
+        <p>
+          This project is built with HTML and CSS.
+          It demonstrates page navigation, responsive layouts,
+          accessible checkboxes, and CSS-driven progress styling.
+        </p>
+
+        <p>
+          Habit completion is temporary and is not permanently saved.
+          This version does not include accounts or a database.
+        </p>
+
+        <div class="technology-tags" aria-label="Technologies used">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Responsive design</span>
+        </div>
+      </section>
+
+      <section class="callout" aria-labelledby="explore-title">
+        <div>
+          <h2 id="explore-title">Make today a little brighter.</h2>
+          <p>Find one small idea to bring into your routine.</p>
+        </div>
+
+        <a class="button-link" href="./tips.html">
+          Explore habit tips →
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>DailyBloom · Make room for better habits.</p>
+      <span>Built with HTML &amp; CSS</span>
+    </footer>
+
+  </div>
+
+  <script src="./theme.js"></script>
+</body>
+</html>

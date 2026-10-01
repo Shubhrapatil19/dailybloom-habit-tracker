@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="A simple daily habit tracker built with HTML and CSS."
+  >
+
+  <title>DailyBloom | Habit Tracker</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <header class="header">
+  <a class="logo" href="./index.html">
+    <span class="logo-icon" aria-hidden="true">✿</span>
+    DailyBloom
+  </a>
+
+  <nav class="navigation" aria-label="Main navigation">
+  <a href="./index.html" aria-current="page">Home</a>
+  <a href="./tips.html">Tips</a>
+  <a href="./challenges.html">Challenges</a>
+  <a href="./mood.html">Mood</a>
+  <a href="./about.html">About</a>
+</nav>
+
+
+<button
+  class="theme-toggle"
+  id="theme-toggle"
+  type="button"
+  aria-label="Toggle dark mode"
+  aria-pressed="false"
+>
+  <span id="theme-icon" aria-hidden="true">🌙</span>
+  <span id="theme-text">Dark mode</span>
+</button>
+</header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <span class="badge">SMALL STEPS. BIG CHANGES.</span>
+
+        <h1 id="hero-title">
+          Build a better day,<br>
+          <span>one habit at a time.</span>
+        </h1>
+
+        <p class="hero-description">
+          You don't need to change everything today.
+          Start small, stay consistent, and celebrate your progress.
+        </p>
+      </section>
+
+      <section class="tracker" id="habits" aria-labelledby="habits-title">
+
+        <div class="section-heading">
+          <div>
+            <p class="section-label">YOUR DAILY ROUTINE</p>
+            <h2 id="habits-title">Today's habits</h2>
+          </div>
+
+          <span class="routine-count">3 simple habits</span>
+        </div>
+
+        <div class="habit-grid">
+
+          <article class="habit-card">
+            <span class="habit-icon water" aria-hidden="true">💧</span>
+
+            <p class="category">WELLNESS</p>
+
+            <h3>Stay hydrated</h3>
+
+            <p class="habit-description">
+              Take a moment to drink some water and refresh yourself.
+            </p>
+
+            <label class="habit-control">
+              <input
+                type="checkbox"
+                id="water-habit"
+                name="water-habit"
+              >
+
+              <span class="custom-checkbox" aria-hidden="true"></span>
+
+              <span class="control-text">
+                Mark as complete
+              </span>
+            </label>
+          </article>
+
+          <article class="habit-card">
+            <span class="habit-icon reading" aria-hidden="true">📖</span>
+
+            <p class="category">LEARNING</p>
+
+            <h3>Read a little</h3>
+
+            <p class="habit-description">
+              Spend ten minutes with a book or learn something new.
+            </p>
+
+            <label class="habit-control">
+              <input
+                type="checkbox"
+                id="reading-habit"
+                name="reading-habit"
+              >
+
+              <span class="custom-checkbox" aria-hidden="true"></span>
+
+              <span class="control-text">
+                Mark as complete
+              </span>
+            </label>
+          </article>
+
+          <article class="habit-card">
+            <span class="habit-icon movement" aria-hidden="true">🌿</span>
+
+            <p class="category">MOVEMENT</p>
+
+            <h3>Move your body</h3>
+
+            <p class="habit-description">
+              Enjoy a short walk, stretch, or take a mindful movement break.
+            </p>
+
+            <label class="habit-control">
+              <input
+                type="checkbox"
+                id="movement-habit"
+                name="movement-habit"
+              >
+
+              <span class="custom-checkbox" aria-hidden="true"></span>
+
+              <span class="control-text">
+                Mark as complete
+              </span>
+            </label>
+          </article>
+
+        </div>
+
+        <div class="progress-panel">
+          <div class="progress-heading">
+            <h3>Your daily progress</h3>
+
+            <span class="progress-count">
+              <span class="count-zero">0 / 3 completed</span>
+              <span class="count-one">1 / 3 completed</span>
+              <span class="count-two">2 / 3 completed</span>
+              <span class="count-three">3 / 3 completed</span>
+            </span>
+          </div>
+
+          <div class="progress-track" aria-hidden="true">
+            <div class="progress-fill"></div>
+          </div>
+
+          <p class="progress-message">
+            Every small step counts. You've got this!
+          </p>
+        </div>
+
+      </section>
+
+      <aside class="quote-panel" aria-label="Daily encouragement">
+        <span class="quote-icon" aria-hidden="true">✦</span>
+
+        <p>
+          Progress starts with showing up for yourself.
+        </p>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p>DailyBloom · Make room for better habits.</p>
+      <span>Built with HTML &amp; CSS</span>
+    </footer>
+
+  </div>
+  <script src="./theme.js"></script>
+</body>
+</html>
