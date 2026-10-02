@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Enter the DailyBloom demo habit tracker."
+  >
+
+  <title>Login | DailyBloom</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="app">
+
+    <header class="header">
+      <a class="logo" href="./login.html">
+        <span class="logo-icon" aria-hidden="true">✿</span>
+        DailyBloom
+      </a>
+
+      <button
+        class="theme-toggle"
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle dark mode"
+        aria-pressed="false"
+      >
+        <span id="theme-icon" aria-hidden="true">🌙</span>
+        <span id="theme-text">Dark mode</span>
+      </button>
+    </header>
+
+    <main class="login-layout">
+
+      <section class="login-intro">
+        <span class="badge">YOUR DAILY SPACE</span>
+
+        <h1>
+          Welcome back.<br>
+          <span>Let's grow together.</span>
+        </h1>
+
+        <p>
+          Check in with your habits, explore small challenges,
+          and make time for yourself.
+        </p>
+
+        <div class="login-art" aria-hidden="true">🌱</div>
+      </section>
+
+      <section class="login-card" aria-labelledby="login-title">
+        <p class="section-label">DAILYBLOOM DEMO</p>
+
+        <h2 id="login-title">Start your check-in</h2>
+
+        <p class="login-description">
+          Enter your name and a demo email to explore the application.
+        </p>
+
+        <form id="login-form">
+
+          <div class="login-field">
+            <label for="display-name">Your name</label>
+
+            <input
+              id="display-name"
+              name="displayName"
+              type="text"
+              placeholder="Enter your name"
+              autocomplete="given-name"
+              maxlength="60"
+              required
+            >
+          </div>
+
+          <div class="login-field">
+            <label for="email">Email address</label>
+
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="demo@example.com"
+              autocomplete="email"
+              maxlength="254"
+              required
+            >
+          </div>
+
+          <p class="login-note">
+            Demo access only. No account or password is verified.
+            You can use demo@example.com.
+          </p>
+
+          <button class="login-submit" type="submit">
+            Enter DailyBloom →
+          </button>
+
+          <p
+            id="login-message"
+            class="login-message"
+            role="status"
+          ></p>
+
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>DailyBloom · Small steps, every day.</p>
+      <span>Frontend demo</span>
+    </footer>
+
+  </div>
+
+  <script src="./theme.js"></script>
+  <script src="./session.js"></script>
+  
+</body>
+</html>

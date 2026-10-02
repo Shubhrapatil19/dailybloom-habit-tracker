@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Pause and reflect with DailyBloom's simple mood check-in."
+  >
+
+  <title>Mood Check-in | DailyBloom</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="mood-page">
+  <div class="app">
+
+    <header class="header">
+      <a class="logo" href="./index.html">
+        <span class="logo-icon" aria-hidden="true">✿</span>
+        DailyBloom
+      </a>
+
+      <div class="account-controls">
+  <span>
+    Hi, <strong data-user-name>friend</strong>
+  </span>
+
+  <button
+    class="logout-button"
+    type="button"
+    data-logout
+  >
+    Logout
+  </button>
+</div>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="./index.html">Home</a>
+        <a href="./tips.html">Tips</a>
+        <a href="./challenges.html">Challenges</a>
+        <a href="./mood.html" aria-current="page">Mood</a>
+        <a href="./about.html">About</a>
+      </nav>
+      <button
+  class="theme-toggle"
+  id="theme-toggle"
+  type="button"
+  aria-label="Toggle dark mode"
+  aria-pressed="false"
+>
+  <span id="theme-icon" aria-hidden="true">🌙</span>
+  <span id="theme-text">Dark mode</span>
+</button>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="mood-title">
+        <span class="badge">A MOMENT JUST FOR YOU</span>
+
+        <h1 id="mood-title">
+          Pause for a moment.<br>
+          <span>How do you feel?</span>
+        </h1>
+
+        <p class="hero-description">
+          There is no perfect answer.
+          Choose the feeling that fits you right now.
+        </p>
+      </section>
+
+      <section class="mood-panel" aria-labelledby="choose-title">
+
+        <fieldset class="mood-fieldset">
+          <legend id="choose-title">Choose your current mood</legend>
+
+          <div class="mood-options">
+
+            <label class="mood-option">
+              <input type="radio" name="mood" id="mood-happy" value="happy">
+
+              <span class="mood-tile">
+                <span class="mood-emoji" aria-hidden="true">😊</span>
+                <span class="mood-name">Happy</span>
+              </span>
+            </label>
+
+            <label class="mood-option">
+              <input type="radio" name="mood" id="mood-calm" value="calm">
+
+              <span class="mood-tile">
+                <span class="mood-emoji" aria-hidden="true">😌</span>
+                <span class="mood-name">Calm</span>
+              </span>
+            </label>
+
+            <label class="mood-option">
+              <input type="radio" name="mood" id="mood-okay" value="okay">
+
+              <span class="mood-tile">
+                <span class="mood-emoji" aria-hidden="true">🙂</span>
+                <span class="mood-name">Okay</span>
+              </span>
+            </label>
+
+            <label class="mood-option">
+              <input type="radio" name="mood" id="mood-tired" value="tired">
+
+              <span class="mood-tile">
+                <span class="mood-emoji" aria-hidden="true">😴</span>
+                <span class="mood-name">Tired</span>
+              </span>
+            </label>
+
+            <label class="mood-option">
+              <input type="radio" name="mood" id="mood-low" value="low">
+
+              <span class="mood-tile">
+                <span class="mood-emoji" aria-hidden="true">😔</span>
+                <span class="mood-name">Low</span>
+              </span>
+            </label>
+
+          </div>
+        </fieldset>
+
+        <div class="mood-feedback">
+
+          <p class="mood-placeholder">
+            Select a mood above to see a little encouragement.
+          </p>
+
+          <div class="mood-response response-happy">
+            <h2>Enjoy your bright moment ☀️</h2>
+            <p>
+              Make room for something you enjoy,
+              or write down what made you smile today.
+            </p>
+          </div>
+
+          <div class="mood-response response-calm">
+            <h2>Make space for this calm 🌿</h2>
+            <p>
+              Enjoy a quiet moment, a favourite song,
+              or a few pages of a book.
+            </p>
+          </div>
+
+          <div class="mood-response response-okay">
+            <h2>An ordinary day counts too 🌤️</h2>
+            <p>
+              You don't need to do everything.
+              Choose one manageable thing for your day.
+            </p>
+          </div>
+
+          <div class="mood-response response-tired">
+            <h2>You can take it gently 🌙</h2>
+            <p>
+              If you can, make room for a comfortable pause.
+              Your routine can wait for a quieter moment.
+            </p>
+          </div>
+
+          <div class="mood-response response-low">
+            <h2>Be kind to yourself today 💛</h2>
+            <p>
+              You don't have to force a productive day.
+              Consider a comforting activity or talking
+              with someone you trust.
+            </p>
+          </div>
+
+        </div>
+
+        <p class="mood-storage-note">
+          This is a temporary check-in. Your selection is not saved.
+        </p>
+
+      </section>
+
+      <section class="reflection-panel" aria-labelledby="reflection-title">
+        <span class="reflection-symbol" aria-hidden="true">💭</span>
+
+        <div>
+          <p class="section-label">A QUESTION TO THINK ABOUT</p>
+
+          <h2 id="reflection-title">
+            What would make today feel a little easier?
+          </h2>
+
+          <p>
+            It could be a small break, a conversation,
+            or finishing one simple task.
+          </p>
+        </div>
+      </section>
+
+      <section class="callout" aria-labelledby="routine-title">
+        <div>
+          <h2 id="routine-title">Return to your daily routine.</h2>
+          <p>Choose the next small step that feels right for you.</p>
+        </div>
+
+        <a class="button-link" href="./index.html#habits">
+          Open habit tracker →
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>DailyBloom · Make room for better habits.</p>
+      <span>Built with HTML &amp; CSS</span>
+    </footer>
+
+  </div>
+  
+  <script src="./theme.js"></script>
+<script src="./session.js"></script>
+</body>
+</html>
